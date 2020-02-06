@@ -1,0 +1,35 @@
+
+.header {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-row-gap: 1rem;
+
+    &__progressbar {
+        height: 2rem;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2rem;
+        color: $color-grey-light-1;
+        text-align: center;
+        background-color: $color-primary;
+        transition: all .6s ease;
+    }
+
+    &__display {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        color: $color-grey-dark;
+
+        &--time {
+            font-size: 11rem;
+        }
+
+        &--title {
+            font-size: 3.7rem;
+            text-transform: uppercase;
+            letter-spacing: .25rem;
+        }
+    }
+}

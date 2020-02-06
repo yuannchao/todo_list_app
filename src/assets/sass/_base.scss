@@ -1,0 +1,55 @@
+// COLOR VARIABLES
+$color-primary: #82aeda;
+$color-primary-light: #a3c6ea;
+$color-primary-dark: #40576e;
+
+$color-grey-light-1: #f6f6f6;
+$color-grey-light-2: #8d8c8a;
+
+$color-grey-dark: #363538;
+
+
+// FONT VARIABLES
+$font-primary: 'Lato', sans-serif;
+
+// RESPONSIVE BREAKPOINT
+$bp-largest: 75em; // 1200px
+$bp-medium: 50em; // 800px 
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-light-1;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom ,
+        rgba($color-primary-light, 0.3),
+        rgba($color-primary-dark, 0.3)) , 
+        url(https://crossorigin.me/https://i.imgur.com/h0YNmQd.jpg);
+
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: max-content min-content 1fr;
+    grid-template-columns: [notcomplete-start] 50vw [notcomplete-end complete-start] 50vw [complete-end];
+
+}
+
